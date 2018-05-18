@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layoutDirection="rtl"
+    android:id="@+id/product_score_card_view"
+    android:layout_below="@+id/product_tozihat_box"
+    >
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/product_score"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="10dp"
+           >
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="10dp"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/score_avg"
+                   android:textSize="11dp"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="امتیاز از "
+                   android:textSize="11dp"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/score_count"
+                   android:textSize="11dp"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="رای ثبت شده"
+                   android:textSize="11dp"
+                   />
+           </LinearLayout>
+           <RatingBar
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:numStars="5"
+               android:id="@+id/ratingBar"
+               android:theme="@style/rating_theme"
+               style="@style/Widget.AppCompat.RatingBar.Indicator"
+               android:scaleX=".7"
+               android:scaleY=".7"
+               android:layoutDirection="ltr"
+               />
+
+       </LinearLayout>
+       <GridLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:columnCount="2"
+           android:rowCount="6"
+           >
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_column="0"
+               android:layout_row="0"
+               android:text="کيفيت ساخت" />
+
+
+
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_column="0"
+               android:layout_row="1"
+               android:text="ارزش خريد به نسبت قيمت" />
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_column="0"
+               android:layout_row="2"
+               android:text="نوآوري" />
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_column="0"
+               android:layout_row="3"
+               android:text="امکانات و قابليت ها" />
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_column="0"
+               android:layout_row="4"
+               android:text="سهولت استفاده" />
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_column="0"
+               android:layout_row="5"
+               android:text="طراحي و ظاهر" />
+
+
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="1"
+               android:layout_row="0"
+               android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item1_1"
+                   />
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item1_2"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item1_3"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item1_4"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item1_5"
+                   />
+
+           </LinearLayout>
+
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="1"
+               android:layout_row="1"
+               android:layout_marginTop="5dp"
+               android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item2_1"
+                   />
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item2_2"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item2_3"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item2_4"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="15dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item2_5"
+                   />
+
+           </LinearLayout>
+
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="1"
+               android:layout_row="2"
+               android:layout_marginTop="5dp"
+               android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item3_1"
+                   />
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item3_2"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item3_3"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item3_4"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item3_5"
+                   />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="1"
+               android:layout_row="3"
+               android:layout_marginTop="5dp"
+               android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item4_1"
+                   />
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item4_2"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item4_3"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item4_4"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item4_5"
+                   />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="1"
+               android:layout_row="4"
+               android:layout_marginTop="5dp"
+               android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item5_1"
+                   />
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item5_2"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item5_3"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item5_4"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item5_5"
+                   />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="1"
+               android:layout_row="5"
+               android:layout_marginTop="5dp"
+               android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item6_1"
+                   />
+
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item6_2"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item6_3"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item6_4"
+                   />
+               <RelativeLayout
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:background="#E0E0E0"
+                   android:id="@+id/product_scrot_item6_5"
+                   />
+
+           </LinearLayout>
+
+       </GridLayout>
+   </LinearLayout>
+</android.support.v7.widget.CardView>

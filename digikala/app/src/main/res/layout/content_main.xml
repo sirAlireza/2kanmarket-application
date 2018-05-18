@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.apple.digikala.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/load_layout"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content_box"
+        android:visibility="gone"
+        >
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:paddingBottom="20dp"
+               >
+               <android.support.v4.view.ViewPager
+                   android:id="@+id/slider"
+                   android:layout_width="match_parent"
+                   android:layout_height="150dp" />
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="120dp"
+                   android:layoutDirection="ltr"
+                   android:orientation="horizontal"
+                   android:id="@+id/slider_shape_list"
+                   />
+
+
+
+               <android.support.v7.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="160dp"
+                   android:id="@+id/cat_index_list"
+                   android:layout_marginRight="10dp"
+                   />
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/amazing_box"
+                   android:orientation="horizontal"
+                   android:layout_below="@+id/cat_index_list"
+                   android:layoutDirection="ltr"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   >
+                   <ImageView
+                       android:layout_width="150dp"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/amazing"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="15dp"
+                       android:layout_marginTop="5dp"
+                       />
+
+                   <TextView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:id="@+id/amazing_h"
+                       android:textColor="#FFF"
+                       android:background="@drawable/amazing_time"
+                       android:gravity="center_horizontal|center_vertical"
+                       />
+
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="24dp"
+                       android:layout_marginLeft="45dp"
+                       android:orientation="vertical"
+                       android:layout_centerVertical="true"
+                       >
+                       <View
+                           android:layout_width="8dp"
+                           android:layout_height="8dp"
+                           android:background="@drawable/amazing_time"
+                           />
+                       <View
+                           android:layout_width="8dp"
+                           android:layout_height="8dp"
+                           android:background="@drawable/amazing_time"
+                           android:layout_marginTop="16dp"
+                           />
+                   </RelativeLayout>
+
+
+                   <TextView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:id="@+id/amazing_m"
+                       android:textColor="#FFF"
+                       android:background="@drawable/amazing_time"
+                       android:layout_marginLeft="58dp"
+                       android:gravity="center_horizontal|center_vertical"
+                       />
+
+
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="24dp"
+                       android:layout_marginLeft="106dp"
+                       android:orientation="vertical"
+                       android:layout_centerVertical="true"
+                       >
+                       <View
+                           android:layout_width="8dp"
+                           android:layout_height="8dp"
+                           android:background="@drawable/amazing_time"
+                           />
+                       <View
+                           android:layout_width="8dp"
+                           android:layout_height="8dp"
+                           android:background="@drawable/amazing_time"
+                           android:layout_marginTop="16dp"
+                           />
+                   </RelativeLayout>
+
+                   <TextView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:id="@+id/amazing_s"
+                       android:textColor="#FFF"
+                       android:background="@drawable/amazing_time"
+                       android:layout_marginLeft="119dp"
+                       android:gravity="center_horizontal|center_vertical"
+                       />
+               </RelativeLayout>
+
+               <android.support.v7.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/amazing_product"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/amazing_box"
+                   />
+
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:text="پرفروش ترین محصولات"
+                   android:layout_below="@+id/amazing_product"
+                   android:layout_marginTop="5dp"
+                   android:id="@+id/order_product_lable"
+                   android:textColor="#000"
+                   />
+
+               <android.support.v7.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/order_product"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/order_product_lable"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:text="جدیدترین محصولات"
+                   android:layout_below="@+id/order_product"
+                   android:layout_marginTop="5dp"
+                   android:id="@+id/new_product_lable"
+                   android:textColor="#000"
+                   />
+               <android.support.v7.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/new_product"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/new_product_lable"
+                   />
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:text="پربازدید محصولات"
+                   android:layout_below="@+id/new_product"
+                   android:layout_marginTop="5dp"
+                   android:id="@+id/view_product_lable"
+                   android:textColor="#000"
+                   />
+               <android.support.v7.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/view_product"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/view_product_lable"
+                   />
+
+
+           </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

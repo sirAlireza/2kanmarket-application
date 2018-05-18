@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.apple.digikala.shop_cart"
+    tools:showIn="@layout/activity_shop_cart">
+
+
+
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="12dp"
+               android:paddingBottom="12dp"
+               android:paddingRight="10dp"
+               android:paddingLeft="10dp"
+               android:background="#FFF"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:text="مبلغ قابل پرداخت"
+                   android:textColor="#689F38"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:id="@+id/total_price"
+                   android:textColor="#689F38"
+                   />
+
+           </RelativeLayout>
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginBottom="50dp"
+               android:layout_marginTop="45dp"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/cart_content"
+                   android:orientation="vertical"
+                   >
+
+
+
+
+
+               </LinearLayout>
+           </ScrollView>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_alignParentBottom="true"
+               android:background="#7CB342"
+               >
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_centerHorizontal="true"
+                   android:layout_centerVertical="true"
+                   android:id="@+id/btn_addOrder"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="خرید خود را نهایی کنید"
+                       android:textColor="#FFF"
+                       android:layout_marginTop="3dp"
+                       android:textStyle="bold"
+                       />
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_chevron_left"
+                       />
+               </LinearLayout>
+           </RelativeLayout>
+       </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
